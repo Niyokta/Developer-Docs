@@ -1,0 +1,25 @@
+Route : /auth/signin
+
+200 : Signin Successfull
+405 : Invalid Credentials
+400 : Internal Error
+
+Route : /auth/create-account
+
+200 : User Created
+401 : User Already Exists
+400 : Internal Error
+
+Route : /auth/verifyToken
+
+200 : Valid Token
+401 : Token Not Found
+400 : Token Not Validated i.e Invalid Token
+
+Route : /auth/refreshToken
+
+200 : Token Reassigned Successfully
+402 : Payload Defected
+401 : Invalid refresh Token
+400 : Refresh Token Missing
+405 : Internal Error

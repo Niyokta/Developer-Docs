@@ -1,0 +1,20 @@
+Architecture of main-server
+
+Operations handeled : 
+1. Authentication
+
+
+
+Authentication : 
+
+Routes : 
+
+1. /auth/signin
+2. /auth/create-account
+3. /auth/change-password
+4. /auth/verify-email
+
+Flow : 
+
+User signs in with user creds. Creds are sent to backend to verify them and then a access token is issued in order to access the protected routes.
+
