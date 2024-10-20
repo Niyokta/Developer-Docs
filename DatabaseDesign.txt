@@ -1,0 +1,34 @@
+Table : Projects
+
+01. Project ID      : primary key, autoincrement, int
+02. Title           : string, required
+03. Description     : string, required
+04. Client ID       : foreign key, required, int
+05. Category        : [string]
+06. Skills Required : [string]
+07. Max Budget      : required, int
+08. Status          : required, string
+09. Created At      : DATE TIME
+10. Updated At      : DATE TIME
+11. Assigned To     : int
+12. Closing Price   : int
+13. Proposal Count  : default=0, int
+14. Completed At    : DATE TIME
+15. Payment Status  : required, boolean
+16. Bids            : [Bid]
+
+
+
+Table : Bids
+
+01. Bid ID          : primary key, autoincrement, int
+02. Freelancer ID   : required, int
+03. Project ID      : required, int
+04. Bidding Price   : required, int
+05. Freelancer Name : required, string
+06. Proposal        : required, string
+07. Completion Time : DATE TIME
+08. Status          : required, string
+09. Submitted At    : DATE TIME
+10. Client Rating   : int
+11. Is Active       : boolean
